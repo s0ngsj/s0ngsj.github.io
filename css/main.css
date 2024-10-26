@@ -1236,7 +1236,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff6a81;
+    background: #0e9f09;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2666,4 +2666,27 @@ header.header {
   height: 200px;
   width: 200px;
   object-fit: cover;
+}
+/*子相册页面*/
+.img-list {
+  display: flex;
+  flex-direction: column;
+}
+.img-column {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.img-column a {
+  border-bottom: 0px;
+}
+/*图片显示面积*/
+.img-column a img {
+  height: 280px;
+  width: 200px;
+  object-fit: scale-down;
 }
